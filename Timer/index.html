@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body class="bg-dark">
+
+    <div class="container mt-5">
+        <div class="row mt-5 justify-content-center p-5">
+            <div class="col-lg-6 col-md-9 mt-5 p-5" style="background-color: aliceblue;">
+                <div class="row justify-content-center my-4">
+                    <div class="col-3    p-3 text-white text-center">
+                        <input type="text" class="form-control" placeholder="Hours" id="inputHrs">
+                    </div>
+                    <div class="col-3  mx-1  p-3 text-white text-center">
+                        <input type="text" class="form-control" placeholder="Minutes" id="inputMins">
+                    </div>
+                    <div class="col-3    p-3 text-white text-center">
+                        <input type="text" class="form-control" placeholder="Seconds" id="inputSeconds">
+                    </div>
+                    <div class="col-3 mx-1 p-3  text-white text-center">
+                       <button id="setBtn" class="btn btn-outline-danger" onclick="set();" >Set Timer</button>
+                    </div>
+                </div>
+                <div class="row justify-content-center my-4">
+                    <div class="col-3  mx-1 p-3 bg-dark text-white text-center">
+                        <h2 id="hrs">Hours</h2>
+                    </div>
+                    <div class="col-3 mx-1 p-3 bg-dark text-white text-center">
+                        <h2 id="mins">Mins</h2>
+                    </div>
+                    <div class="col-3 mx-1 p-3 bg-dark text-white text-center">
+                        <h2 id="secs">Sec</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center my-4">
+                    <div class="col-3 rounded  mx-1 p-3 bg-success text-white text-center">
+                        <button onclick="start();"
+                        id="startBtn"    class="w-100 h-100 fs-4 border-0 fw-bolder bg-success text-white">Start</button></div>
+                    <div class="col-3  rounded mx-1 p-3 bg-info text-white text-center"><button id="pauseBtn" onclick="pause()"
+                            class="w-100 h-100 fs-4 border-0 fw-bolder bg-info text-white">Pause</button></div>
+                    <div class="col-3 mx-1 rounded p-3 bg-danger text-white text-center"><button id="resetBtn"
+                            class="w-100 h-100 fs-4 border-0 fw-bolder bg-danger text-white " onclick="reset()">Reset</button></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
